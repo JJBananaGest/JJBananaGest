@@ -1,0 +1,45 @@
+body{
+	background: #B8D9DD;
+}
+
+.cabecera_formulario{
+	background: linear-gradient(#C1DFE2, #B8D9DD);
+	padding: 10px;
+	border: solid 1px #ECECEC;
+}
+
+.titulo_formulario{
+	color: #ECECEC;
+}
+
+.formulario{
+	border: solid 1px grey;
+	border-radius: 5px;
+	background: #E1E1E1;
+	padding: 40px 40px 40px 40px;
+	height: 150px;
+	width: 500px;	
+	position: absolute;
+	left: 70%;
+	top: 5px;
+}
+
+.has-error{
+	border: solid 1px red;
+}
+
+.pie_pagina{
+	border: solid 1px gold;
+	text-align: right;
+	color: gold;
+	background: #ECECEC;
+	padding: 10px 20px 10px 0px;
+}
+
+.foo{
+	list-style:none;
+}
+
+#errores_login{
+	padding: 15px;
+}
