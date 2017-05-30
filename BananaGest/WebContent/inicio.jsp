@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="col-xs-12 col-md-4 login">
-                    <form class="form-inline" action="proyectos.html" method="POST" novalidate>
+                    <form class="form-inline" action="proyectos.jsp" method="POST" novalidate>
 
                         <div class="form-group">
                             <label class="sr-only" for="email">Email</label>
