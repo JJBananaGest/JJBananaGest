@@ -6,7 +6,7 @@
         <div class="row">
             <div id="erroresresp"></div>
             <div class="col-xs-3 anchop">
-                <a class="btn btn-default bce" href="new.html">Crear</a>
+                <a class="btn btn-default bce" href="new.jsp">Crear</a>
             </div>
         </div>
     </nav>
@@ -88,7 +88,7 @@
         </div>
     </div>
     <footer>
-        <a href="inicio.html" aria-label="Enlace que dirige a la pàgina de inicio">BananaGest.com</a>
+        <a href="inicio.jsp" aria-label="Enlace que dirige a la pàgina de inicio">BananaGest.com</a>
     </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

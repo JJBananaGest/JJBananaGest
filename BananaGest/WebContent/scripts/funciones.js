@@ -35,7 +35,7 @@ var lista_btns_vertareas = document.getElementsByClassName('ver');
 for (var i = 0; i < lista_btns_vertareas.length; i++) {
     lista_btns_vertareas[i].onclick = function (evnt) {
 
-                    window.location="tareas1.html";
+                    window.location="tareas1.jsp";
         }
 }
 
@@ -44,7 +44,7 @@ var lista_btns_editproyectos = document.getElementsByClassName('edit');
 for (var i = 0; i < lista_btns_editproyectos.length; i++) {
     lista_btns_editproyectos[i].onclick = function (evnt) {
 
-                    window.location="editar.html";
+                    window.location="editar.jsp";
         }
 }
 
@@ -53,7 +53,7 @@ var lista_btns_editartar = document.getElementsByClassName('edittar');
 for (var i = 0; i < lista_btns_editartar.length; i++) {
     lista_btns_editartar[i].onclick = function (evnt) {
 
-                    window.location="editart.html";
+                    window.location="editart.jsp";
         }
 }
 
