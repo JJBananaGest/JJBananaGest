@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>TareasBananaGest</title>
-</head>
+<jsp:include page="head.jsp"></jsp:include>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-md-8 titulo">
-                    <h1>Banana Gest</h1>
-                </div>
-                <div class="col-xs-12 col-md-4 signout">
-                    <a class="btn btn-default" href="inicio.html">SignOut</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <jsp:include page="header.jsp"></jsp:include>
     <nav>
         <div class="row">
             <div id="erroresresp"></div>
@@ -40,7 +19,7 @@
                             <div class="col-xs-4 col-sm-6 col-md-12 bct2">Tareas</div>
                         </div>                        
                         <div class="cabecera-tabla row">
-                             <div class="col-xs-4 col-sm-6 col-md-2">Descripci贸n</div>
+                             <div class="col-xs-4 col-sm-6 col-md-2">Descripci髇</div>
                             <div class="col-xs-4 col-sm-6 col-md-1">Notas</div>
                             <div class="col-xs-4 col-sm-6 col-md-1">Adjuntos</div>
                             <div class="col-xs-4 col-sm-6 col-md-1 fecha">Fecha ini</div>
@@ -58,11 +37,11 @@
                             <div class="col-xs-4 col-sm-6 col-md-2" id="1r">Paquita</div>
                             <div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
                             <div class="col-xs-4 col-sm-6 col-md-3">
-                                <button type="reset" class="resp" data-id="1r" aria-label="Bot贸n para asignar responsable de tarea">Responsable</button>
-                                <button type="reset" class="edittar" aria-label="Bot贸n para editar tarea">Editar</button>
-                                <button class="guard" id= "guarda1r" aria-label="Este bot贸n sirve para guardar el responsable">guardar</button>
-                                <button class="borr" data-id="1" aria-label="Bot贸n para borrar esta tarea">Borrar</button>
-                                <button class="volver" aria-label="Bot贸n para volver a la p谩gina anterior">Volver</button>
+                                <button type="reset" class="resp" data-id="1r" aria-label="Bot髇 para asignar responsable de tarea">Responsable</button>
+                                <button type="reset" class="edittar" aria-label="Bot髇 para editar tarea">Editar</button>
+                                <button class="guard" id= "guarda1r" aria-label="Este bot髇 sirve para guardar el responsable">guardar</button>
+                                <button class="borr" data-id="1" aria-label="Bot髇 para borrar esta tarea">Borrar</button>
+                                <button class="volver" aria-label="Bot髇 para volver a la p醙ina anterior">Volver</button>
                             </div>
                          </div>
                             
@@ -76,11 +55,11 @@
                             <div class="col-xs-4 col-sm-6 col-md-2" id="2r">Paquita</div>
                             <div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
                             <div class="col-xs-4 col-sm-6 col-md-3">
-                                <button type="reset" class="resp" data-id="2r" aria-label="Bot贸n para asignar responsable de tarea">Responsable</button>
-                                <button type="reset" class="edittar" aria-label="Bot贸n para editar tarea">Editar</button>
-                                <button class="guard" id= "guarda2r" aria-label="Este bot贸n sirve para guardar el responsable">guardar</button>
-                                <button class="borr" data-id="2" aria-label="Bot贸n para borrar esta tarea">Borrar</button>
-                                <button class="volver" aria-label="Bot贸n para volver a la p谩gina anterior">Volver</button>
+                                <button type="reset" class="resp" data-id="2r" aria-label="Bot髇 para asignar responsable de tarea">Responsable</button>
+                                <button type="reset" class="edittar" aria-label="Bot髇 para editar tarea">Editar</button>
+                                <button class="guard" id= "guarda2r" aria-label="Este bot髇 sirve para guardar el responsable">guardar</button>
+                                <button class="borr" data-id="2" aria-label="Bot髇 para borrar esta tarea">Borrar</button>
+                                <button class="volver" aria-label="Bot髇 para volver a la p醙ina anterior">Volver</button>
                             </div>
                             </div>
 
@@ -93,11 +72,11 @@
                             <div class="col-xs-4 col-sm-6 col-md-2" id='3r'>Paquita</div>
                             <div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
                             <div class="col-xs-4 col-sm-6 col-md-3">
-                                <button type="reset" class="resp" data-id="3r" aria-label="Bot贸n para asignar responsable de tarea">Responsable</button>
-                                <button type="reset" class="edittar" aria-label="Bot贸n para editar tarea">Editar</button>
-                                <button class="guard" id= "guarda3r" aria-label="Este bot贸n sirve para guardar el responsable">guardar</button>
-                                <button class="borr" data-id="3" aria-label="Bot贸n para borrar esta tarea">Borrar</button>
-                                <button class="volver" aria-label="Bot贸n para volver a la p谩gina anterior">Volver</button>
+                                <button type="reset" class="resp" data-id="3r" aria-label="Bot髇 para asignar responsable de tarea">Responsable</button>
+                                <button type="reset" class="edittar" aria-label="Bot髇 para editar tarea">Editar</button>
+                                <button class="guard" id= "guarda3r" aria-label="Este bot髇 sirve para guardar el responsable">guardar</button>
+                                <button class="borr" data-id="3" aria-label="Bot髇 para borrar esta tarea">Borrar</button>
+                                <button class="volver" aria-label="Bot髇 para volver a la p醙ina anterior">Volver</button>
                             </div>
                             </div>
     
@@ -114,7 +93,7 @@
         </div>
     </div>
     <footer>
-        <a href="inicio.html" aria-label="Enlace que dirige a la p脿gina de inicio">BananaGest.com</a>
+        <a href="inicio.html" aria-label="Enlace que dirige a la p鄃ina de inicio">BananaGest.com</a>
     </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
