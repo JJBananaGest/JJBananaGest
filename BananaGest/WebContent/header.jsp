@@ -7,8 +7,8 @@
                     <h1>Banana Gest</h1>
                	 </div>
                  <div class="col-xs-12 col-md-4 signout">
-                    <a class="bct btn btn-default" href="inicio.html">SignOut</a>
-                    <a class="bct btn btn-default" href="formulario.html">Crear Usuario</a>
+                    <a class="bct btn btn-default" href="inicio.jsp">SignOut</a>
+                    <a class="bct btn btn-default" href="formulario.jsp">Crear Usuario</a>
                  </div>
            	 </div>
         </div>
