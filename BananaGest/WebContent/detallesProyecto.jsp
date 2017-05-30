@@ -81,7 +81,6 @@
 			<div class="col-xs-4 col-sm-6 col-md-1 fecha">Fecha fin</div>
 			<div class="col-xs-4 col-sm-6 col-md-2">Responsable</div>
 			<div class="col-xs-4 col-sm-6 col-md-1">Estado</div>
-			<div class="col-xs-4 col-sm-6 col-md-3">Funciones</div>
 		</div>
 		<div class="fila-tabla  row" id="1">
 			<div class="col-xs-4 col-sm-6 col-md-2">Esta tarea tiene el
@@ -94,18 +93,6 @@
 			<div class="col-xs-4 col-sm-6 col-md-1">13/05/2017</div>
 			<div class="col-xs-4 col-sm-6 col-md-2" id="1r">Paquita</div>
 			<div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
-			<div class="col-xs-4 col-sm-6 col-md-3">
-				<button type="reset" class="resp" data-id="1r"
-					aria-label="Botón para asignar responsable de tarea">Responsable</button>
-				<button type="reset" class="edittar"
-					aria-label="Botón para editar tarea">Editar</button>
-				<button class="guard" id="guarda1r"
-					aria-label="Este botón sirve para guardar el responsable">guardar</button>
-				<button class="borr" data-id="1"
-					aria-label="Botón para borrar esta tarea">Borrar</button>
-				<button class="volver"
-					aria-label="Botón para volver a la página anterior">Volver</button>
-			</div>
 		</div>
 
 	</div>
@@ -120,16 +107,6 @@
 		<div class="col-xs-4 col-sm-6 col-md-2" id="2r">Paquita</div>
 		<div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
 		<div class="col-xs-4 col-sm-6 col-md-3">
-			<button type="reset" class="resp" data-id="2r"
-				aria-label="Botón para asignar responsable de tarea">Responsable</button>
-			<button type="reset" class="edittar"
-				aria-label="Botón para editar tarea">Editar</button>
-			<button class="guard" id="guarda2r"
-				aria-label="Este botón sirve para guardar el responsable">guardar</button>
-			<button class="borr" data-id="2"
-				aria-label="Botón para borrar esta tarea">Borrar</button>
-			<button class="volver"
-				aria-label="Botón para volver a la página anterior">Volver</button>
 		</div>
 	</div>
 
@@ -143,18 +120,6 @@
 		<div class="col-xs-4 col-sm-6 col-md-1">13/05/2017</div>
 		<div class="col-xs-4 col-sm-6 col-md-2" id='3r'>Paquita</div>
 		<div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
-		<div class="col-xs-4 col-sm-6 col-md-3">
-			<button type="reset" class="resp" data-id="3r"
-				aria-label="Botón para asignar responsable de tarea">Responsable</button>
-			<button type="reset" class="edittar"
-				aria-label="Botón para editar tarea">Editar</button>
-			<button class="guard" id="guarda3r"
-				aria-label="Este botón sirve para guardar el responsable">guardar</button>
-			<button class="borr" data-id="3"
-				aria-label="Botón para borrar esta tarea">Borrar</button>
-			<button class="volver"
-				aria-label="Botón para volver a la página anterior">Volver</button>
-		</div>
 	</div>
 
 	<jsp:include page="footer.jsp"></jsp:include>
