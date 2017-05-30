@@ -48,11 +48,7 @@
             </div>
         </div>
     </div>
-    <footer>
-
-        <a href="inicio.html" aria-label="Enlace que dirige a la pàgina de inicio">BananaGest.com</a>
-
-    </footer>
+    <jsp:include page="footer.jsp"></jsp:include>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
