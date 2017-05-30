@@ -1,0 +1,35 @@
+input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.crearusuario{
+    background: #81BB27;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    padding: 10px 45px;
+    border: solid 1px darkolivegreen;
+    border-radius: 5px;
+}
+
+.fi{
+    padding-right:200px;
+}
+
+.volver2{
+    background: url(../img/flechapack.gif) no-repeat #81BB27;
+    bottom: 5px;
+    left: 345px;
+    padding:20px 20px 15px 20px;
+    position: absolute;
+    text-indent: -666em;
+    white-space: nowrap;
+    overflow:hidden;
+    height: 40px;
+    border: solid 1px darkolivegreen;
+    border-radius: 5px;
+}
+.extra{padding-bottom: 45px;
+
+}
