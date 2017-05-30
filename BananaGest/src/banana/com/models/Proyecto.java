@@ -2,7 +2,7 @@ package banana.com.models;
 
 import java.util.List;
 
-public class Proyectos {
+public class Proyecto {
 	int id;
 	String titulo;
 	String descripcion;
