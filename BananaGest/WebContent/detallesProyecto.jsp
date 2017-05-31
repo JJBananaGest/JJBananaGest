@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <jsp:include page="head.jsp"></jsp:include>
 
 <body>
@@ -21,106 +21,60 @@
 							<div class="col-xs-4 col-sm-6 col-md-2">Id</div>
 							<div class="col-xs-4 col-sm-6 col-md-2">Título</div>
 							<div class="col-xs-4 col-sm-6 col-md-2">Descripción</div>
-							<div class="col-xs-4 col-sm-6 col-md-2 fecha">Fecha inicio</div>
+							<div class="col-xs-0 col-sm-6 col-md-2">Fecha fin</div>
 							<div class="col-xs-4 col-sm-6 col-md-2">Responsable</div>
+							<div class="col-xs-4 col-sm-6 col-md-2">Estado</div>
 							<div class="col-xs-0 col-sm-6 col-md-2"></div>
 						</div>
-						<div class="fila-tabla  row" id="1">
-							<div class="col-xs-4 col-sm-6 col-md-2"></div>
-							<div class="col-xs-4 col-sm-6 col-md-2">ibermatica</div>
-							<div class="col-xs-4 col-sm-6 col-md-2">proyecto pymes</div>
-							<div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>
-							<div class="col-xs-4 col-sm-6 col-md-2" id="1r">Gloria
-								Fernandez</div>
-							<div class="col-xs-4 col-sm-6 col-md-2"></div>
-							<div class="col-xs-0 col-sm-6 col-md-2"></div>
+						<c:forEach var="x" items="${detallesProyectoAMostrar}"
+							varStatus="counter">
+							<div class="fila-tabla  row" id="1">
+								<div class="col-xs-4 col-sm-6 col-md-2">1</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">ibermatica</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">proyecto pymes</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">Gloria Fernandez</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">Activo</div>
+							</div>
+						</c:forEach>
+					</div>
+					<div class="tabla">
+						<div class="fila-tabla row">
+							<div class="col-xs-4 col-sm-6 col-md-12 bct2">Tareas</div>
 						</div>
-						<div class="fila-tabla  row" id="2">
-							<div class="col-xs-4 col-sm-6 col-md-2"></div>
-							<div class="col-xs-4 col-sm-6 col-md-2">ibermatica</div>
-							<div class="col-xs-4 col-sm-6 col-md-2">proyecto pymes</div>
-							<div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>
-							<div class="col-xs-4 col-sm-6 col-md-2" id="2r">Gloria
-								Fernandez</div>
-							<div class="col-xs-4 col-sm-6 col-md-2"></div>
 
-							<div class="col-xs-0 col-sm-6 col-md-2"></div>
+						<div class="cabecera-tabla row">
+							<div class="col-xs-4 col-sm-6 col-md-2">Descripción</div>
+							<div class="col-xs-4 col-sm-6 col-md-1">Notas</div>
+							<div class="col-xs-4 col-sm-6 col-md-1 fecha">Fecha ini</div>
+							<div class="col-xs-4 col-sm-6 col-md-1 fecha">Fecha fin</div>
+							<div class="col-xs-4 col-sm-6 col-md-2">Responsable</div>
+							<div class="col-xs-4 col-sm-6 col-md-1">Estado</div>
 						</div>
-						<div class="fila-tabla  row" id="3">
-							<div class="col-xs-4 col-sm-6 col-md-2"></div>
-							<div class="col-xs-4 col-sm-6 col-md-2">ibermatica</div>
-							<div class="col-xs-4 col-sm-6 col-md-2">proyecto pymes</div>
-							<div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>
-							<div class="col-xs-4 col-sm-6 col-md-2" id="3r">Gloria
-								Fernandez</div>
-							<div class="col-xs-4 col-sm-6 col-md-2"></div>
-							<div class="col-xs-0 col-sm-6 col-md-2"></div>
-						</div>
+
+						<c:forEach var="x" items="${listaTareasAMostrar}"
+							varStatus="counter">
+							<div class="fila-tabla  row">
+								<div class="col-xs-4 col-sm-6 col-md-2"><span>${x.descripcion}</span></div>
+								<div class="col-xs-4 col-sm-6 col-md-2"><span>${x.notas}</span></div>
+								<div class="col-xs-4 col-sm-6 col-md-1"><span>${x.fechaI}</span></div>
+								<div class="col-xs-4 col-sm-6 col-md-1"><span>${x.fechaF}</span></div>
+								<div class="col-xs-4 col-sm-6 col-md-1"><span>${x.responsable}</span></div>
+								<div class="col-xs-4 col-sm-6 col-md-1"><span>${x.estado}</span></div>
+							</div>
+						</c:forEach>
 					</div>
 				</section>
 			</div>
-			<div class="col-xs-12 col-sm-3 col-md-3 aside">
+			<div class="col-xs-12 col-sm-3 col-md-4 aside">
 				<aside>
 					<div class="fila-tabla row">
-						<div class="col-xs-4 col-sm-6 col-md-12 bca">Informacion
+						<div class="col-xs-4 col-sm-6 col-md-12 bca">Información
 							Importante</div>
 					</div>
-
 				</aside>
 			</div>
 		</div>
-	</div>
-	<div class="tabla">
-		<div class="fila-tabla row">
-			<div class="col-xs-4 col-sm-6 col-md-12 bct2">Tareas</div>
-		</div>
-		<div class="cabecera-tabla row">
-			<div class="col-xs-4 col-sm-6 col-md-2">Descripción</div>
-			<div class="col-xs-4 col-sm-6 col-md-1">Notas</div>
-			<div class="col-xs-4 col-sm-6 col-md-1">Adjuntos</div>
-			<div class="col-xs-4 col-sm-6 col-md-1 fecha">Fecha ini</div>
-			<div class="col-xs-4 col-sm-6 col-md-1 fecha">Fecha fin</div>
-			<div class="col-xs-4 col-sm-6 col-md-2">Responsable</div>
-			<div class="col-xs-4 col-sm-6 col-md-1">Estado</div>
-		</div>
-		<div class="fila-tabla  row" id="1">
-			<div class="col-xs-4 col-sm-6 col-md-2">Esta tarea tiene el
-				objetivo final de..</div>
-			<div class="col-xs-4 col-sm-6 col-md-1">Hay que acabar de hacer
-				el calendario..</div>
-			<div class="col-xs-4 col-sm-6 col-md-1">Imagen003.jpg,
-				audio.mp3..</div>
-			<div class="col-xs-4 col-sm-6 col-md-1">21/01/2014</div>
-			<div class="col-xs-4 col-sm-6 col-md-1">13/05/2017</div>
-			<div class="col-xs-4 col-sm-6 col-md-2" id="1r">Paquita</div>
-			<div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
-		</div>
-
-	</div>
-	<div class="fila-tabla  row" id="2">
-		<div class="col-xs-4 col-sm-6 col-md-2">Esta tarea tiene el
-			objetivo final de..</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">Hay que acabar de hacer
-			el calendario..</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">Imagen003, audio.mp3..</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">21/01/2014</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">13/05/2017</div>
-		<div class="col-xs-4 col-sm-6 col-md-2" id="2r">Paquita</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
-		<div class="col-xs-4 col-sm-6 col-md-3">
-		</div>
-	</div>
-
-	<div class="fila-tabla  row" id="3">
-		<div class="col-xs-4 col-sm-6 col-md-2">Esta tarea tiene el
-			objetivo final de..</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">Hay que acabar de hacer
-			el calendario..</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">Imagen003, audio.mp3.</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">21/01/2014</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">13/05/2017</div>
-		<div class="col-xs-4 col-sm-6 col-md-2" id='3r'>Paquita</div>
-		<div class="col-xs-4 col-sm-6 col-md-1">Abierto</div>
 	</div>
 
 	<jsp:include page="footer.jsp"></jsp:include>
