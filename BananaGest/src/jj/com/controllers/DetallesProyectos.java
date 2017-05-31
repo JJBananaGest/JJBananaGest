@@ -137,7 +137,8 @@ public class DetallesProyectos extends HttpServlet {
 		listaTareasAnastasioP3.add( new Tarea("descripción", "notas", "01/01/2016", "14/03/2017", "Anastasio", "Finalizada") );
 		//Proyecto 3 de Anastasio
 		Proyecto pAn3 = new Proyecto(1, "loteria", "descripción", "25/09/2017", "Luis", "Activo", listaTareasAnastasioP3);
-		
+		//##########################################################################################################################
+		//##########################################################################################################################
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
