@@ -12,7 +12,6 @@ public class Proyecto {
 	public List<Tarea> ListaDeTareas;
 	public Proyecto(int id, String titulo, String descripcion, String fechaF, String responsable, String estado,
 			List<Tarea> listaDeTareas) {
-		super();
 		this.id = id;
 		this.titulo = titulo;
 		this.descripcion = descripcion;
