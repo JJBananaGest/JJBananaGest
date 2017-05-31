@@ -41,7 +41,6 @@ public class Login extends HttpServlet {
 			HttpSession misession = (HttpSession) request.getSession();
 			misession.setAttribute("id", "aura@mail.com");
 			request.getRequestDispatcher("/proyectos").forward(request, response);
-			;
 		} else {
 
 			request.setAttribute("mierror", "Email o contraseña erroneos");
