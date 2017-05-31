@@ -8,8 +8,9 @@ public class Proyecto {
 	String descripcion;
 	String fechaF;
 	String responsable;
+	String estado;
 	public List<Tarea> ListaDeTareas;
-	public Proyecto(int id, String titulo, String descripcion, String fechaF, String responsable,
+	public Proyecto(int id, String titulo, String descripcion, String fechaF, String responsable, String estado,
 			List<Tarea> listaDeTareas) {
 		super();
 		this.id = id;
@@ -17,6 +18,7 @@ public class Proyecto {
 		this.descripcion = descripcion;
 		this.fechaF = fechaF;
 		this.responsable = responsable;
+		this.estado = estado;
 		ListaDeTareas = listaDeTareas;
 	}
 	
