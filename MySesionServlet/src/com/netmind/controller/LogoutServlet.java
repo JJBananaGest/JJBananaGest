@@ -1,31 +1,22 @@
-package jj.com.controllers;
+package com.netmind.controller;
 
 import java.io.IOException;
-import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import banana.com.models.Proyecto;
-import banana.com.models.Tarea;
-
-@WebServlet("/ListaProyectos")
-public class ListaProyectos extends HttpServlet {
+@WebServlet("/logout")
+public class LogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-    public ListaProyectos() {
-    }
-
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession();
 		
-		Tarea tareas1 = new Tarea(null, null, null, null, null, null);
-		List<Tarea> tareas2 = new List<Tarea>;
-		Proyecto p1 = new Proyecto(1, "ibermatica", "descripción", "12/08/2016", "Aura", tareas1);
-		
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		session.invalidate();
+		request.getRequestDispatcher("/login").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
