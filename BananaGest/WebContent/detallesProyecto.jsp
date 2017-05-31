@@ -29,12 +29,12 @@
 						<c:forEach var="x" items="${detallesProyectoAMostrar}"
 							varStatus="counter">
 							<div class="fila-tabla  row" id="1">
-								<div class="col-xs-4 col-sm-6 col-md-2">1</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">ibermatica</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">proyecto pymes</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">Gloria Fernandez</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">Activo</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">${x.id}</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">${x.titulo}</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">${x.descripcion}</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">${x.fechaF}</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">${x.responsable}</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">${x.estado}</div>
 							</div>
 						</c:forEach>
 					</div>
@@ -55,12 +55,24 @@
 						<c:forEach var="x" items="${listaTareasAMostrar}"
 							varStatus="counter">
 							<div class="fila-tabla  row">
-								<div class="col-xs-4 col-sm-6 col-md-2"><span>${x.descripcion}</span></div>
-								<div class="col-xs-4 col-sm-6 col-md-2"><span>${x.notas}</span></div>
-								<div class="col-xs-4 col-sm-6 col-md-1"><span>${x.fechaI}</span></div>
-								<div class="col-xs-4 col-sm-6 col-md-1"><span>${x.fechaF}</span></div>
-								<div class="col-xs-4 col-sm-6 col-md-1"><span>${x.responsable}</span></div>
-								<div class="col-xs-4 col-sm-6 col-md-1"><span>${x.estado}</span></div>
+								<div class="col-xs-4 col-sm-6 col-md-2">
+									<span>${x.descripcion}</span>
+								</div>
+								<div class="col-xs-4 col-sm-6 col-md-2">
+									<span>${x.notas}</span>
+								</div>
+								<div class="col-xs-4 col-sm-6 col-md-1">
+									<span>${x.fechaI}</span>
+								</div>
+								<div class="col-xs-4 col-sm-6 col-md-1">
+									<span>${x.fechaF}</span>
+								</div>
+								<div class="col-xs-4 col-sm-6 col-md-1">
+									<span>${x.responsable}</span>
+								</div>
+								<div class="col-xs-4 col-sm-6 col-md-1">
+									<span>${x.estado}</span>
+								</div>
 							</div>
 						</c:forEach>
 					</div>
@@ -69,7 +81,7 @@
 			<div class="col-xs-12 col-sm-3 col-md-4 aside">
 				<aside>
 					<div class="fila-tabla row">
-						<div class="col-xs-4 col-sm-6 col-md-12 bca">Información
+						<div class="col-xs-12 col-sm-6 col-md-4 bca">Información
 							Importante</div>
 					</div>
 				</aside>

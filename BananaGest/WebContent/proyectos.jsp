@@ -18,25 +18,25 @@
 							<div class="col-xs-4 col-sm-6 col-md-12 bct">Proyecto</div>
 						</div>
 						<div class="cabecera-tabla row">
-							<div class="col-xs-4 col-sm-6 col-md-2">Id</div>
-							<div class="col-xs-4 col-sm-6 col-md-2">Título</div>
-							<div class="col-xs-4 col-sm-6 col-md-2 fecha">Fecha fin</div>
-							<div class="col-xs-4 col-sm-6 col-md-2">Estado</div>
+							<div class="col-xs-4 col-sm-6 col-md-3">Id</div>
+							<div class="col-xs-4 col-sm-6 col-md-3">Título</div>
+							<div class="col-xs-4 col-sm-6 col-md-3 fecha">Fecha fin</div>
+							<div class="col-xs-4 col-sm-6 col-md-3">Estado</div>
 						</div>
 
 						<c:forEach var="x" items="${listaProyectosAMostrar}"
 							varStatus="counter">
 							<div class="fila-tabla  row" id="1">
-								<div class="col-xs-4 col-sm-6 col-md-2">
+								<div class="col-xs-4 col-sm-6 col-md-3">
 									<span>${x.id}</span>
 								</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">
+								<div class="col-xs-4 col-sm-6 col-md-3">
 									<a href="detalles"><span>${x.titulo}</span></a>
 								</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">
+								<div class="col-xs-4 col-sm-6 col-md-3">
 									<span>${x.fechaF}</span>
 								</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">
+								<div class="col-xs-4 col-sm-6 col-md-3">
 									<span>${x.estado}</span>
 								</div>
 							</div>
