@@ -31,8 +31,7 @@ public class Login extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		doGet(request, response);
-
+		
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 
@@ -46,6 +45,7 @@ public class Login extends HttpServlet {
 			request.setAttribute("mierror", "Email o contraseña erroneos");
 			doGet(request, response);
 		}
+		
 	}
 
 }

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +22,7 @@ public class ListaProyectos extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		
 		//Proyectos Aura
 		List<Proyecto> listaProyectosAura = new ArrayList <Proyecto>();
@@ -43,6 +45,8 @@ public class ListaProyectos extends HttpServlet {
 		listaProyectosAnastasio.add( new Proyecto(11,"votos","descripción","25/09/2017","Anastasio","Activo",null) );
 		listaProyectosAnastasio.add( new Proyecto(12,"loteria","descripción","25/09/2017","Anastasio","Activo",null) );
 		
+		RequestDispatcher rd = request.getRequestDispatcher("proyectos.jsp");
+		rd.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

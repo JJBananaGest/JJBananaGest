@@ -35,7 +35,7 @@ var lista_btns_vertareas = document.getElementsByClassName('ver');
 for (var i = 0; i < lista_btns_vertareas.length; i++) {
     lista_btns_vertareas[i].onclick = function (evnt) {
 
-                    window.location="tareas1.jsp";
+                    window.location="/detalles";
         }
 }
 

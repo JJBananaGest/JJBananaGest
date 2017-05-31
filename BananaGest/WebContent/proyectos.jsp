@@ -22,37 +22,24 @@
                         	<div class="col-xs-4 col-sm-6 col-md-2">Id</div>
                             <div class="col-xs-4 col-sm-6 col-md-2">Título</div>
                             <div class="col-xs-4 col-sm-6 col-md-2 fecha">Fecha fin</div>
-                            <div class="col-xs-4 col-sm-6 col-md-2">Funciones</div>
-                            <div class="col-xs-0 col-sm-6 col-md-2"></div>
                         </div>
                         <div class="fila-tabla  row" id="1">
                             <div class="col-xs-4 col-sm-6 col-md-2"></div>
-                            <div class="col-xs-4 col-sm-6 col-md-2">ibermatica</div>
+                            <div class="col-xs-4 col-sm-6 col-md-2"><a href="">ibermatica</a></div>
                             <div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>
-                            <div class="col-xs-4 col-sm-6 col-md-2"></div>
-                            <div class="col-xs-4 col-sm-6 col-md-2">
-                                <button class="ver" aria-label="boton para ver las tareas del proyecto">Ver</button>
-                            </div>
-                            <div class="col-xs-0 col-sm-6 col-md-2"></div>
+                            <div class="col-xs-4 col-sm-6 col-md-2">Activo</div>
                         </div>
                         <div class="fila-tabla  row" id="2" >
                         	<div class="col-xs-4 col-sm-6 col-md-2"></div>
-                            <div class="col-xs-4 col-sm-6 col-md-2">ibermatica</div>
-                            <div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>           
-                            <div class="col-xs-4 col-sm-6 col-md-2">
-                                <button class="ver" aria-label="boton para ver las tareas del proyecto">Ver</button>
-                                </div>
-                                
-                            <div class="col-xs-0 col-sm-6 col-md-2"></div>
+                            <div class="col-xs-4 col-sm-6 col-md-2"><a href="">ibermatica</a></div>
+                            <div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>
+                            <div class="col-xs-4 col-sm-6 col-md-2">Activo</div>
                         </div>
                         <div class="fila-tabla  row" id="3">
                         	<div class="col-xs-4 col-sm-6 col-md-2"></div>
-                            <div class="col-xs-4 col-sm-6 col-md-2">ibermatica</div>
+                            <div class="col-xs-4 col-sm-6 col-md-2"><a href="">ibermatica</a></div>
                             <div class="col-xs-4 col-sm-6 col-md-2">15-10-2020</div>
-                            <div class="col-xs-4 col-sm-6 col-md-2">
-                                <button class="ver" aria-label="boton para ver las tareas del proyecto">Ver</button>
-                            </div>
-                            <div class="col-xs-0 col-sm-6 col-md-2"></div>
+                            <div class="col-xs-4 col-sm-6 col-md-2">Activo</div>
                         </div>
                     </div>
                 </section>

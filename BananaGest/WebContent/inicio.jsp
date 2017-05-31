@@ -20,16 +20,16 @@
                 </div>
 
                 <div class="col-xs-12 col-md-4 login">
-                    <form class="form-inline" action="proyectos.jsp" method="POST" novalidate>
+                    <form class="form-inline" action="login" method="POST" novalidate>
 
                         <div class="form-group">
                             <label class="sr-only" for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email" required aria-label="Aquí se introduce el email usado en la cuenta de usuario">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required aria-label="Aquí se introduce el email usado en la cuenta de usuario" value="aura@mail.com">
                         </div>
 
                         <div class="form-group">
                             <label class="sr-only" for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder ="Password" required aria-label="Aquí se introduce la contraseÃ±a">
+                            <input type="password" class="form-control" id="password" name="password" placeholder ="Password" required aria-label="Aquí se introduce la contraseÃ±a" value="aura369">
                         </div>
 
                         <button id="btn_login" type="submit" class="btn btn-default" aria-label="Este botón sirve para entrar a la cuenta de usuario">Sign in</button>
