@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>InicioBananaGest</title>
+    <title>BananaGest</title>
 </head>
 <body>
     <header>
@@ -24,16 +24,17 @@
 
                         <div class="form-group">
                             <label class="sr-only" for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email" required aria-label="AquÃ­ se introduce el email usado en la cuenta de usuario">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required aria-label="Aquí se introduce el email usado en la cuenta de usuario">
                         </div>
 
                         <div class="form-group">
                             <label class="sr-only" for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder ="Password" required aria-label="AquÃ­ se introduce la contraseÃ±a">
+                            <input type="password" class="form-control" id="password" placeholder ="Password" required aria-label="Aquí se introduce la contraseÃ±a">
                         </div>
 
-                        <button id="btn_login" type="submit" class="btn btn-default" aria-label="Este botÃ³n sirve para entrar a la cuenta de usuario">Sign in</button>
+                        <button id="btn_login" type="submit" class="btn btn-default" aria-label="Este botón sirve para entrar a la cuenta de usuario">Sign in</button>
                         <div id="errores"></div>
+                        <div class="mierror"></div>
                     </form>
                 </div>
             </div>
