@@ -2,6 +2,8 @@ package jj.com.controllers;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -23,6 +25,7 @@ public class ListaProyectos extends HttpServlet {
 	public ListaProyectos() {
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession misession = (HttpSession) request.getSession();
@@ -58,17 +61,33 @@ public class ListaProyectos extends HttpServlet {
 
 		String idUsuario = (String) misession.getAttribute("id");
 
-		if (idUsuario.equals("aura@mail.com") ) {
+		if (idUsuario.equals("aura@mail.com")) {
 			listaPUsuario = listaProyectosAura;
 		}
-		if (idUsuario.equals("luis@mail.com") ) {
+		if (idUsuario.equals("luis@mail.com")) {
 			listaPUsuario = listaProyectosLuis;
 		}
-		if (idUsuario.equals("anastasio@mail.com") ) {
+		if (idUsuario.equals("anastasio@mail.com")) {
 			listaPUsuario = listaProyectosAnastasio;
 		}
 
 		request.setAttribute("listaProyectosAMostrar", listaPUsuario);
+		// #########################################################################################################################################################################
+		// Ordenar proyectos !!
+
+		Collections.sort(listaPUsuario, new Comparator() {
+			@SuppressWarnings("unused")
+			public int compare(Proyecto p1, Proyecto p2) {
+				return new Integer(p1.getId()).compareTo(new Integer(p2.getId()));
+			}
+
+			@Override
+			public int compare(Object o1, Object o2) {
+				return 0;
+			}
+		});
+		// #########################################################################################################################################################################
+
 		request.getRequestDispatcher("proyectos.jsp").forward(request, response);
 	}
 
