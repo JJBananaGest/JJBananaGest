@@ -31,7 +31,7 @@
 									<span>${x.id}</span>
 								</div>
 								<div class="col-xs-4 col-sm-6 col-md-3">
-									<a href="detalles"><span>${x.titulo}</span></a>
+									<a href="detalles?id=${x.id}"><span>${x.titulo}</span></a>
 								</div>
 								<div class="col-xs-4 col-sm-6 col-md-3">
 									<span>${x.fechaF}</span>
@@ -44,14 +44,6 @@
 
 					</div>
 				</section>
-			</div>
-			<div class="col-xs-12 col-sm-3 col-md-4 aside">
-				<aside>
-					<div class="fila-tabla row">
-						<div class="col-xs-4 col-sm-6 col-md-12 bca">Información
-							Importante</div>
-					</div>
-				</aside>
 			</div>
 		</div>
 	</div>

@@ -31,21 +31,29 @@ public class Login extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+		HttpSession misession = (HttpSession) request.getSession();
+
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 
-		// autentificacion de usuario
+		// autentificacion de Usuarios
 		if (email.equals("aura@mail.com") && password.equals("aura369")) {
-			HttpSession misession = (HttpSession) request.getSession();
 			misession.setAttribute("id", "aura@mail.com");
+			request.getRequestDispatcher("/proyectos").forward(request, response);
+		}
+		if (email.equals("luis@mail.com") && password.equals("luis369")) {
+			misession.setAttribute("id", "luis@mail.com");
+			request.getRequestDispatcher("/proyectos").forward(request, response);
+		}
+		if (email.equals("anastasio@mail.com") && password.equals("anastasio369")) {
+			misession.setAttribute("id", "anastasio@mail.com");
 			request.getRequestDispatcher("/proyectos").forward(request, response);
 		} else {
 
 			request.setAttribute("mierror", "Email o contraseña erroneos");
 			doGet(request, response);
 		}
-		
+		// ##########################################################################################################################
 	}
 
 }

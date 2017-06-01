@@ -7,7 +7,8 @@ public class Tarea {
 	String fechaF;
 	String responsable;
 	String estado;
-	public Tarea(String descripcion, String notas, String fechaI, String fechaF, String responsable,  String estado) {
+
+	public Tarea(String descripcion, String notas, String fechaI, String fechaF, String responsable, String estado) {
 		this.descripcion = descripcion;
 		this.notas = notas;
 		this.fechaI = fechaI;
@@ -15,6 +16,5 @@ public class Tarea {
 		this.responsable = responsable;
 		this.estado = estado;
 	}
-	
-	
+
 }
