@@ -177,8 +177,8 @@ public class DetallesProyectos extends HttpServlet {
 		// Proyecto 3 de Anastasio
 		Proyecto pAn3 = new Proyecto(12, "loteria", "descripción", "25/09/2017", "Anastasio", "Activo",
 				listaTareasAnastasioP3);
-		
-		//Base de datos de Proyectos y detalles !!
+
+		// Base de datos de Proyectos y detalles !!
 		HashMap<String, Proyecto> bbddProyectos = new HashMap<String, Proyecto>();
 		bbddProyectos.put("1", pA1);
 		bbddProyectos.put("2", pA2);
@@ -192,9 +192,47 @@ public class DetallesProyectos extends HttpServlet {
 		bbddProyectos.put("10", pAn1);
 		bbddProyectos.put("11", pAn2);
 		bbddProyectos.put("12", pAn3);
-	
+
+		String idPr = request.getParameter("id");
 		Proyecto detallesProyectoAMostrar = null;
 
+		if (idPr.equals("1")) {
+			detallesProyectoAMostrar = pA1;
+		}
+		if (idPr.equals("2")) {
+			detallesProyectoAMostrar = pA2;
+		}
+		if (idPr.equals("3")) {
+			detallesProyectoAMostrar = pA3;
+		}
+		if (idPr.equals("4")) {
+			detallesProyectoAMostrar = pA4;
+		}
+		if (idPr.equals("5")) {
+			detallesProyectoAMostrar = pL1;
+		}
+		if (idPr.equals("6")) {
+			detallesProyectoAMostrar = pL2;
+		}
+		if (idPr.equals("7")) {
+			detallesProyectoAMostrar = pL3;
+		}
+		if (idPr.equals("8")) {
+			detallesProyectoAMostrar = pL4;
+		}
+		if (idPr.equals("9")) {
+			detallesProyectoAMostrar = pL5;
+		}
+		if (idPr.equals("10")) {
+			detallesProyectoAMostrar = pAn1;
+		}
+		if (idPr.equals("11")) {
+			detallesProyectoAMostrar = pAn2;
+		}
+
+		if (idPr.equals("12")) {
+			detallesProyectoAMostrar = pAn3;
+		}
 
 		request.setAttribute("detallesProyectoAMostrar", detallesProyectoAMostrar);
 		request.getRequestDispatcher("detallesProyecto.jsp").forward(request, response);

@@ -32,7 +32,7 @@ console.log('mira lo que hay en alli ');
     
 
     if (!presentacion.validity.valid) {
-        if (presentacion.validity.valueMissing) mensajes += '<li>Tienes que introducir una presentación</li>'
+        if (presentacion.validity.valueMissing) mensajes += '<li>Tienes que introducir una presentacion</li>'
     }
     if (!foto.validity.valid) {
         if (foto.validity.patternMismatch) mensajes += '<li>Tienes que introducir una extension de foto correcta</li>'

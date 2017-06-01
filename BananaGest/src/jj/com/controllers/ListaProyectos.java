@@ -58,13 +58,13 @@ public class ListaProyectos extends HttpServlet {
 
 		String idUsuario = (String) misession.getAttribute("id");
 
-		if (idUsuario.equals("aura@mail.com")) {
+		if (idUsuario.equals("aura@mail.com") ) {
 			listaPUsuario = listaProyectosAura;
 		}
-		if (idUsuario.equals("luis@mail.com")) {
+		if (idUsuario.equals("luis@mail.com") ) {
 			listaPUsuario = listaProyectosLuis;
 		}
-		if (idUsuario.equals("anastasio@mail.com")) {
+		if (idUsuario.equals("anastasio@mail.com") ) {
 			listaPUsuario = listaProyectosAnastasio;
 		}
 

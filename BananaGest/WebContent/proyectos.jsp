@@ -20,7 +20,7 @@
 						<div class="cabecera-tabla row">
 							<div class="col-xs-4 col-sm-6 col-md-3">Id</div>
 							<div class="col-xs-4 col-sm-6 col-md-3">Título</div>
-							<div class="col-xs-4 col-sm-6 col-md-3 fecha">Fecha fin</div>
+							<div class="col-xs-4 col-sm-6 col-md-3">Fecha fin</div>
 							<div class="col-xs-4 col-sm-6 col-md-3">Estado</div>
 						</div>
 
