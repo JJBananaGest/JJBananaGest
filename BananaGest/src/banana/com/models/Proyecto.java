@@ -9,7 +9,7 @@ public class Proyecto {
 	String fechaF;
 	String responsable;
 	String estado;
-	public List<Tarea> ListaDeTareas;
+	public List<Tarea> listaDeTareas;
 
 	public Proyecto(int id, String titulo, String descripcion, String fechaF, String responsable, String estado,
 			List<Tarea> listaDeTareas) {
@@ -19,7 +19,7 @@ public class Proyecto {
 		this.fechaF = fechaF;
 		this.responsable = responsable;
 		this.estado = estado;
-		ListaDeTareas = listaDeTareas;
+		this.listaDeTareas = listaDeTareas;
 	}
 
 	public int getId() {
@@ -71,11 +71,11 @@ public class Proyecto {
 	}
 
 	public List<Tarea> getListaDeTareas() {
-		return ListaDeTareas;
+		return listaDeTareas;
 	}
 
 	public void setListaDeTareas(List<Tarea> listaDeTareas) {
-		ListaDeTareas = listaDeTareas;
+		this.listaDeTareas = listaDeTareas;
 	}
 
 	public static String getAttribute(String string) {

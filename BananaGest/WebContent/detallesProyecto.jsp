@@ -9,14 +9,18 @@
 			<div class="col-xs-3 anchop"></div>
 		</div>
 	</nav>
-	
+
 	<div class="container-fluid">
 		<div class="row central">
 			<div class="col-md-9 section">
 				<section>
 					<div class="tabla">
 						<div class="fila-tabla row">
-							<div class="col-xs-4 col-sm-6 col-md-12 bct">Proyecto</div>
+							<div class="col-xs-4 col-sm-6 col-md-12 bct">
+								Proyecto
+								<button class="volver"
+									aria-label="Este botón dirige a la página anterior">Volver</button>
+							</div>
 						</div>
 						<div class="cabecera-tabla row">
 							<div class="col-xs-4 col-sm-6 col-md-2">Id</div>
@@ -25,17 +29,16 @@
 							<div class="col-xs-0 col-sm-6 col-md-2">Fecha fin</div>
 							<div class="col-xs-4 col-sm-6 col-md-2">Responsable</div>
 							<div class="col-xs-4 col-sm-6 col-md-2">Estado</div>
-							<div class="col-xs-0 col-sm-6 col-md-2"></div>
 						</div>
-							<div class="fila-tabla  row" id="1">
-								<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.id}</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.titulo}</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.descripcion}</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.fechaF}</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.responsable}</div>
-								<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.estado}</div>
-							</div>
-						
+						<div class="fila-tabla  row" id="1">
+							<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.id}</div>
+							<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.titulo}</div>
+							<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.descripcion}</div>
+							<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.fechaF}</div>
+							<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.responsable}</div>
+							<div class="col-xs-4 col-sm-6 col-md-2">${detallesProyectoAMostrar.estado}</div>
+						</div>
+
 					</div>
 					<div class="tabla">
 						<div class="fila-tabla row">
@@ -51,7 +54,8 @@
 							<div class="col-xs-4 col-sm-6 col-md-2">Estado</div>
 						</div>
 
-						<c:forEach var="x" items="${detallesProyectoAMostrar.List<Tarea> listaTareas}"
+						<c:forEach var="x"
+							items="${detallesProyectoAMostrar.listaDeTareas}"
 							varStatus="counter">
 							<div class="fila-tabla  row">
 								<div class="col-xs-4 col-sm-6 col-md-2">

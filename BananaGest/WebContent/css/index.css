@@ -1,185 +1,185 @@
-body{
-    background-color: lightgray;
+body {
+	background-color: lightgray;
 }
 
-.titulo{
-    background: url(../img/logo-banana1.png) no-repeat;
-    padding-left: 100px;
-    padding-bottom: 3px;
-   /* margin-right: 20px;*/   
+.titulo {
+	background: url(../img/logo-banana1.png) no-repeat;
+	padding-left: 100px;
+	padding-bottom: 3px;
+	/* margin-right: 20px;*/
 }
 
-header{
-    background: url(../img/fondo.jpg); 
-    color: white;
-    padding-left:10px;
-    padding-top:10px;
-    padding-bottom:10px
-     }
-
-
-form{display:inline-block;
-     padding-top:30px;
-     padding-bottom:10px }
-h1{
-  padding-top:10px;
-  font-size:40px
+header {
+	background: url(../img/fondo.jpg);
+	color: white;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px
 }
 
-form{
-    position: right;
+form {
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 10px
 }
 
-.section{background-color:#FFFFDD;
-    
+h1 {
+	padding-top: 10px;
+	font-size: 40px
 }
 
-
-footer{
-    background-color:#DDDDFF;
-    color: darkblue;
-    text-align: right;
-    padding: 10px;
+form {
+	position: right;
 }
 
-
-#titulo{
-    padding-left:10px;
-    padding-top:10px
+.section {
+	background-color: #FFFFDD;
 }
 
-ul{
-    list-style: none;
+footer {
+	background-color: #DDDDFF;
+	color: darkblue;
+	text-align: right;
+	padding: 10px;
 }
 
-.anchop{width:61px}
-
-li{
-    height: 40px;
+#titulo {
+	padding-left: 10px;
+	padding-top: 10px
 }
 
-li > *{
-    display: inline-block;
+ul {
+	list-style: none;
 }
 
-.resp{
-    background: url(../img/responsable.png) no-repeat lightgrey center;
-    padding:20px 20px 5px 20px;
-    text-indent: -666em;
-    white-space: nowrap;
-    overflow:hidden;
-    height: 15px;
-    }
-
-.guard{
-    background: url(../img/guardar.png) no-repeat lightgrey center;
-    padding:20px 20px 5px 20px;
-    text-indent: -666em;
-    white-space: nowrap;
-    overflow:hidden;
-    height: 15px;
- }
-
-.edit{
-     background: url(../img/editar.png) no-repeat lightgrey center;
-    padding:20px 20px 5px 20px;
-    text-indent: -666em;
-    white-space: nowrap;
-    overflow:hidden;
-    height: 15px;
+.anchop {
+	width: 61px
 }
 
-.edittar{
-     background: url(../img/editar.png) no-repeat lightgrey center;
-    padding:20px 20px 5px 20px;
-    text-indent: -666em;
-    white-space: nowrap;
-    overflow:hidden;
-    height: 15px;
+li {
+	height: 40px;
 }
 
-.borr{
-    background: url(../img/papelera.png) no-repeat lightgrey center;
-    padding:20px 20px 5px 20px;
-    text-indent: -666em;
-    white-space: nowrap;
-    overflow:hidden;
-    height: 15px;
-    }
-
-.ver{
-    background: url(../img/ojo12.png) no-repeat lightgrey center;
-    padding:20px 20px 5px 20px;
-    text-indent: -666em;
-    white-space: nowrap;
-    overflow:hidden;
-    height: 15px;
+li>* {
+	display: inline-block;
 }
 
-.volver{
-    background: url(../img/flechapack1.gif) no-repeat lightgrey center;
-    padding:20px 20px 5px 20px;
-    text-indent: -666em;
-    white-space: nowrap;
-    overflow:hidden;
-    height: 15px;
+.resp {
+	background: url(../img/responsable.png) no-repeat lightgrey center;
+	padding: 20px 20px 5px 20px;
+	text-indent: -666em;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 15px;
 }
 
-p{
-    font-size: 15px;
+.guard {
+	background: url(../img/guardar.png) no-repeat lightgrey center;
+	padding: 20px 20px 5px 20px;
+	text-indent: -666em;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 15px;
+}
+
+.edit {
+	background: url(../img/editar.png) no-repeat lightgrey center;
+	padding: 20px 20px 5px 20px;
+	text-indent: -666em;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 15px;
+}
+
+.edittar {
+	background: url(../img/editar.png) no-repeat lightgrey center;
+	padding: 20px 20px 5px 20px;
+	text-indent: -666em;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 15px;
+}
+
+.borr {
+	background: url(../img/papelera.png) no-repeat lightgrey center;
+	padding: 20px 20px 5px 20px;
+	text-indent: -666em;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 15px;
+}
+
+.ver {
+	background: url(../img/ojo12.png) no-repeat lightgrey center;
+	padding: 20px 20px 5px 20px;
+	text-indent: -666em;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 15px;
+}
+
+.volver {
+	background: url(../img/flechapack1.gif) no-repeat lightgrey center;
+	padding: 20px 20px 5px 20px;
+	text-indent: -666em;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 15px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+p {
+	font-size: 15px;
 }
 
 /* tablas con css */
-div.tabla{
-                     
-    border-collapse: collapse;
- }
-
-div.cabecera-tabla, div.fila-tabla, div.pie-tabla{
-    border-bottom: 2px solid gray;
-    }
-
-div.cabecera-tabla div{
-    background-color: gray;
-     color: white;
-    text-transform: uppercase
-    }
-                                 
-div.cabecera-tabla div, div.fila-tabla div, div.pie-tabla div{
-    display: table-cell;
-    min-height: 40px;
-    text-align: center;
-    padding: 5px 0;
+div.tabla {
+	border-collapse: collapse;
 }
 
-.central{
-    background-color:#DDFFDD;
-}
-   
-.bce{
-    background-color: darkgrey
+div.cabecera-tabla, div.fila-tabla, div.pie-tabla {
+	border-bottom: 2px solid gray;
 }
 
-.bct{
-    background-color: #81BB27
+div.cabecera-tabla div {
+	background-color: gray;
+	color: white;
+	text-transform: uppercase
 }
 
-.bct2{
-    background-color: #DAD61A
+div.cabecera-tabla div, div.fila-tabla div, div.pie-tabla div {
+	display: table-cell;
+	min-height: 40px;
+	text-align: center;
+	padding: 5px 0;
 }
 
-
-.bca{
-    background-color:rgba(129, 187, 39, 0.55)
+.central {
+	background-color: #DDFFDD;
 }
 
-
-.fecha{
-    background: url(../img/flechas_fechas2.png) no-repeat right top;
+.bce {
+	background-color: darkgrey
 }
 
-label{
-    display: none;
+.bct {
+	background-color: #81BB27
 }
 
+.bct2 {
+	background-color: #DAD61A
+}
 
+.bca {
+	background-color: rgba(129, 187, 39, 0.55)
+}
+
+.fecha {
+	background: url(../img/flechas_fechas2.png) no-repeat right top;
+}
+
+label {
+	display: none;
+}

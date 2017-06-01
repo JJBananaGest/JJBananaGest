@@ -192,6 +192,8 @@ public class DetallesProyectos extends HttpServlet {
 
 		Proyecto detallesProyectoAMostrar = pAn3;
 
+		System.out.println("***" + detallesProyectoAMostrar.getListaDeTareas());
+
 		request.setAttribute("detallesProyectoAMostrar", detallesProyectoAMostrar);
 		request.getRequestDispatcher("detallesProyecto.jsp").forward(request, response);
 
