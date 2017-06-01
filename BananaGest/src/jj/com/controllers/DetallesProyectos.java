@@ -2,6 +2,7 @@ package jj.com.controllers;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -142,7 +143,7 @@ public class DetallesProyectos extends HttpServlet {
 		listaTareasAnastasioP1
 				.add(new Tarea("descripción", "notas", "22/12/2016", "27/06/2017", "Anastasio", "Activa"));
 		// Proyecto 1 de Anastasio
-		Proyecto pAn1 = new Proyecto(10, "oposiciones", "descripción", "01/08/2017", "Luis", "Activo",
+		Proyecto pAn1 = new Proyecto(10, "oposiciones", "descripción", "01/08/2017", "Anastasio", "Activo",
 				listaTareasAnastasioP1);
 
 		request.setAttribute("listaDetallesAMostrar", pAn1);
@@ -157,7 +158,7 @@ public class DetallesProyectos extends HttpServlet {
 		listaTareasAnastasioP2
 				.add(new Tarea("descripción", "notas", "13/02/2017", "15/02/2017", "Anastasio", "Finalizada"));
 		// Proyecto 2 de Anastasio
-		Proyecto pAn2 = new Proyecto(11, "votos", "descripción", "25/09/2017", "Luis", "Activo",
+		Proyecto pAn2 = new Proyecto(11, "votos", "descripción", "25/09/2017", "Anastasio", "Activo",
 				listaTareasAnastasioP2);
 
 		request.setAttribute("listaDetallesAMostrar", pAn2);
@@ -174,25 +175,26 @@ public class DetallesProyectos extends HttpServlet {
 		listaTareasAnastasioP3
 				.add(new Tarea("descripción", "notas", "01/01/2016", "14/03/2017", "Anastasio", "Finalizada"));
 		// Proyecto 3 de Anastasio
-		Proyecto pAn3 = new Proyecto(12, "loteria", "descripción", "25/09/2017", "Luis", "Activo",
+		Proyecto pAn3 = new Proyecto(12, "loteria", "descripción", "25/09/2017", "Anastasio", "Activo",
 				listaTareasAnastasioP3);
+		
+		//Base de datos de Proyectos y detalles !!
+		HashMap<String, Proyecto> bbddProyectos = new HashMap<String, Proyecto>();
+		bbddProyectos.put("1", pA1);
+		bbddProyectos.put("2", pA2);
+		bbddProyectos.put("3", pA3);
+		bbddProyectos.put("4", pA4);
+		bbddProyectos.put("5", pL1);
+		bbddProyectos.put("6", pL2);
+		bbddProyectos.put("7", pL3);
+		bbddProyectos.put("8", pL4);
+		bbddProyectos.put("9", pL5);
+		bbddProyectos.put("10", pAn1);
+		bbddProyectos.put("11", pAn2);
+		bbddProyectos.put("12", pAn3);
+	
+		Proyecto detallesProyectoAMostrar = null;
 
-		// ##########################################################################################################################
-		// ##########################################################################################################################
-		/*
-		 * String idUsuario = (String) misession.getAttribute("id"); String
-		 * idProyecto = (String) Proyecto.getAttribute("id"); Proyecto
-		 * listaDUsuario = new Proyecto(0, null, null, null, null, null, new
-		 * ArrayList<Tarea>());
-		 * 
-		 * if (idUsuario.equals("aura@mail.com") && ) {
-		 * 
-		 * }
-		 */
-
-		Proyecto detallesProyectoAMostrar = pAn3;
-
-		System.out.println("***" + detallesProyectoAMostrar.getListaDeTareas());
 
 		request.setAttribute("detallesProyectoAMostrar", detallesProyectoAMostrar);
 		request.getRequestDispatcher("detallesProyecto.jsp").forward(request, response);
