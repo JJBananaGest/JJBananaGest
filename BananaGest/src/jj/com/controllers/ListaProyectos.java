@@ -25,7 +25,6 @@ public class ListaProyectos extends HttpServlet {
 	public ListaProyectos() {
 	}
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession misession = (HttpSession) request.getSession();
@@ -75,16 +74,12 @@ public class ListaProyectos extends HttpServlet {
 		// #########################################################################################################################################################################
 		// Ordenar proyectos !!
 
-		Collections.sort(listaPUsuario, new Comparator() {
-			@SuppressWarnings("unused")
+		Collections.sort(listaPUsuario, new Comparator<Proyecto>() {
+			@Override
 			public int compare(Proyecto p1, Proyecto p2) {
 				return new Integer(p1.getId()).compareTo(new Integer(p2.getId()));
 			}
 
-			@Override
-			public int compare(Object o1, Object o2) {
-				return 0;
-			}
 		});
 		// #########################################################################################################################################################################
 
