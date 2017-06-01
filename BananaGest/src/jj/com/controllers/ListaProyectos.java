@@ -77,7 +77,11 @@ public class ListaProyectos extends HttpServlet {
 		Collections.sort(listaPUsuario, new Comparator<Proyecto>() {
 			@Override
 			public int compare(Proyecto p1, Proyecto p2) {
-				return new Integer(p1.getId()).compareTo(new Integer(p2.getId()));
+				return new Integer(p2.getId()).compareTo(new Integer(p1.getId()));
+			}
+			
+			public int compare1(Proyecto p1, Proyecto p2) {
+				return new Integer(p1.getEstado()).compareTo(new Integer(p2.getEstado()));
 			}
 
 		});

@@ -23,11 +23,14 @@
 							<div class="col-xs-4 col-sm-6 col-md-3">Fecha fin</div>
 							<div class="col-xs-4 col-sm-6 col-md-3">Estado</div>
 						</div>
-
+						
+						<c:set var = "finalizado" scope = "request" value = "Finalizado"/>
+						
+						
 						<c:forEach var="x" items="${listaProyectosAMostrar}"
 							varStatus="counter">
 							<div class="fila-tabla  row" id="1">
-								<div class="col-xs-4 col-sm-6 col-md-3">
+								<c:if test= "${x.estado ne finalizado}"><div class="col-xs-4 col-sm-6 col-md-3">
 									<span>${x.id}</span>
 								</div>
 								<div class="col-xs-4 col-sm-6 col-md-3">
@@ -39,6 +42,20 @@
 								<div class="col-xs-4 col-sm-6 col-md-3">
 									<span>${x.estado}</span>
 								</div>
+								</c:if>
+								<c:if test= "${x.estado eq finalizado}"><div class="col-xs-4 col-sm-6 col-md-3 acabado">
+									<span>${x.id}</span>
+								</div>
+								<div class="col-xs-4 col-sm-6 col-md-3">
+									<a href="detalles?id=${x.id}"><span>${x.titulo}</span></a>
+								</div>
+								<div class="col-xs-4 col-sm-6 col-md-3">
+									<span>${x.fechaF}</span>
+								</div>
+								<div class="col-xs-4 col-sm-6 col-md-3">
+									<span>${x.estado}</span>
+								</div>
+								</c:if>
 							</div>
 						</c:forEach>
 

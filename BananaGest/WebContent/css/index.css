@@ -183,3 +183,7 @@ div.cabecera-tabla div, div.fila-tabla div, div.pie-tabla div {
 label {
 	display: none;
 }
+
+.acabado {
+	color: red;
+}
